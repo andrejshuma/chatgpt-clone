@@ -12,9 +12,8 @@ const Homepage = () => {
         <h1>ANDREJ AI</h1>
         <h2>Supercharge your creativity and productivity</h2>
         <h3>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam
-          ratione dolorem iure recusandae veniam expedita, doloremque incidunt
-          corrupti adipisci necessitatibus eligendi magni quas maxime.
+          Unleash the full potential of AI with our cutting-edge conversational
+          AI platform. Use it to generate ideas, solve problems, and much more!
         </h3>
         <Link to="/dashboard">Get started</Link>
       </div>
