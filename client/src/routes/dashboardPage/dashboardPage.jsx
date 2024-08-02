@@ -1,6 +1,21 @@
 import "./dashboardPage.css";
-
+import { useAuth } from "@clerk/clerk-react";
 const DashboardPage = () => {
+  const { userId } = useAuth();
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const text = e.target.text.value;
+    if (!text) return;
+
+    await fetch("http://localhost:3000/api/chats", {
+      method: "POST",
+      credentials: "include",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ text }),
+    });
+  };
   return (
     <div className="dashboard-page">
       <div className="texts">
@@ -24,8 +39,8 @@ const DashboardPage = () => {
         </div>
       </div>
       <div className="formContainer">
-        <form>
-          <input type="text" placeholder="Ask me anything..." />
+        <form onSubmit={handleSubmit}>
+          <input type="text" name="text" placeholder="Ask me anything..." />
           <button>
             <img src="/arrow.png" alt="" />
           </button>
