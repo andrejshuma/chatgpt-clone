@@ -1,0 +1,116 @@
+body.active-modal {
+    overflow-y: hidden;
+}
+
+.btn-modal {
+    padding: 10px 20px;
+    display: block;
+    margin: 100px auto 0;
+    font-size: 18px;
+}
+
+.modal,
+.overlay {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+}
+
+.overlay {
+    background: rgba(60, 60, 60, 0.8);
+}
+
+.modal-content {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    height: 60vh;
+    width: 70vw;
+    transform: translate(-50%, -50%);
+    line-height: 1.4;
+    padding: 14px 28px;
+    border-radius: 10px;
+    background-color: #0e0c16;
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    .container{
+        border: 1px solid grey;
+        border-radius: 5px;
+        height: 50vh;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h3{
+            color: white;
+            font-size: 30px;
+            margin: 10px 0px;
+        }
+        h5{
+            color: white;
+            font-size: 18px;
+            margin: 10px 0px;
+        }
+        ul{
+            padding: 0px;
+            margin: 0px;
+            width: 100%;
+            overflow-y: auto;
+            height: 100%;
+        }
+        li{
+            margin: 14px;
+            font-size: 14px;
+        }
+        button{
+            margin: 10px 0px;
+            padding: 10px 20px;
+            color: white;
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+            width: 100%;
+            border: 1px solid white;
+            font-size: 16px;
+        }
+                #current {
+                    background-color: rgb(121, 121, 121);
+                }
+        
+                
+        
+                #plus {
+                    background-color: #07a35d;
+                }
+        
+                
+        
+                #team {
+                    background-color: #441aed;
+                }
+        
+                
+    }
+}
+
+.close-modal {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 5px 7px;
+    background-color: #423969;
+    border-radius: 50%;
+    img{
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+    
+    }
+}
