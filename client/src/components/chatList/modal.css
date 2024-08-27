@@ -1,5 +1,6 @@
 body.active-modal {
     overflow-y: hidden;
+    
 }
 
 .btn-modal {
@@ -11,6 +12,7 @@ body.active-modal {
 
 .modal,
 .overlay {
+    
     width: 100vw;
     height: 100vh;
     top: 0;
@@ -43,6 +45,7 @@ body.active-modal {
     .container{
         border: 1px solid grey;
         border-radius: 5px;
+        
         height: 50vh;
         padding: 10px;
         display: flex;
